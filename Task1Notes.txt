@@ -1,0 +1,4 @@
+My friend provided JSON data from link "https://api.github.com/users/mralexgray/repos" and he suggested to convert the same JSON data to table format data. 
+
+For reference he shared some existed examples at link "https://v4-alpha.getbootstrap.com/content/tables/"
+

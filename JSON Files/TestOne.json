@@ -1,0 +1,28 @@
+{
+		color: "red",
+		number: "#f00"
+	},
+	{
+		color: "green",
+		number: "#0f0"
+	},
+	{
+		color: "blue",
+		number: "#00f"
+	},
+	{
+		color: "cyan",
+		number: "#0ff"
+	},
+	{
+		color: "magenta",
+		number: "#f0f"
+	},
+	{
+		color: "yellow",
+		number: "#ff0"
+	},
+	{
+		color: "black",
+		number: "#000"
+	}

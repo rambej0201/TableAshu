@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ajax Get Test One</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="dabba">
+    <div class="table-responsive">
+        <h1>TaskOne JSON to table using AJAX</h1>
+        <br />
+        <table class="table table-bordered table-stripped" id="table-t">
+            <tr>
+                <th>color</th>
+                <th>number</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("JSON Files/TestOne.json", function (data) {
+            var t_data = '';
+            $.each(data, function (key, value) {
+                t_data += '<tr>';
+                t_data += '<td>' + t_data.color + '</td>';
+                t_data += '<td>'+t_data.number+'</td>';
+                t_data += '</tr>';
+            });
+            $('#table-t').append(t_data);
+        });
+    });
+</script>
